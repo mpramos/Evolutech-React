@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Form from "./components/Form";
+import Card from "./components/Card";
+import ListEmojis from "./components/ListEmojis";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* {name:'pepito',edad:28} */}
+      <section className="cards">
+        <Card title="Card con parrafo" children={<ListEmojis/>}/>
+        <Card title="Card de Emojis" />
+        <Card title="Card"/>
+     
+      </section>
+    </>
   );
 }
 
